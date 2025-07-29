@@ -9,10 +9,10 @@ function __memo(fn) {
 return {
 	appDir: "_app",
 	appPath: "_app",
-	assets: new Set(["_redirects"]),
+	assets: new Set([]),
 	mimeTypes: {},
 	_: {
-		client: {"start":"_app/immutable/entry/start.cda28c37.js","app":"_app/immutable/entry/app.314673e9.js","imports":["_app/immutable/entry/start.cda28c37.js","_app/immutable/chunks/scheduler.e108d1fd.js","_app/immutable/chunks/singletons.826363e0.js","_app/immutable/chunks/control.c2cf8273.js","_app/immutable/entry/app.314673e9.js","_app/immutable/chunks/scheduler.e108d1fd.js","_app/immutable/chunks/index.37cfb1fb.js"],"stylesheets":[],"fonts":[]},
+		client: {"start":"_app/immutable/entry/start.92081413.js","app":"_app/immutable/entry/app.381b35e2.js","imports":["_app/immutable/entry/start.92081413.js","_app/immutable/chunks/scheduler.e108d1fd.js","_app/immutable/chunks/singletons.8e89535d.js","_app/immutable/chunks/control.c2cf8273.js","_app/immutable/entry/app.381b35e2.js","_app/immutable/chunks/scheduler.e108d1fd.js","_app/immutable/chunks/index.37cfb1fb.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
 			__memo(() => import('../server/nodes/0.js')),
 			__memo(() => import('../server/nodes/1.js')),
