@@ -40,10 +40,17 @@ async def log_requests(request: Request, call_next):
     
     return response
 
-# CORS middleware
+# CORS middleware - Allow frontend URL from environment
+FRONTEND_URL = os.getenv("FRONTEND_URL", "http://localhost:5173")
+allowed_origins = [
+    "http://localhost:5173", 
+    "http://localhost:3000",  # SvelteKit dev servers
+    FRONTEND_URL  # Production frontend URL
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:3000"],  # SvelteKit dev servers
+    allow_origins=allowed_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
